@@ -1,5 +1,12 @@
+import { Button } from "./components/Button.tsx";
+
 function App() {
-  return <h1 className='text-emerald-700'>Hello World, styled by TailwindCSS this title should be green</h1>
+  return <Button bgColor="bg-neutral-900" textColor="text-neutral-200" >Click me from parent</Button>
+    ;
 }
 
-export default App
+// function App() {
+//   return <Button styledButton = {{bgColor: 'bg-neutral-200', textColor: 'text-neutral-200'}}/>
+// }
+
+export default App;
