@@ -1,10 +1,10 @@
 import "./App.css";
+import { Button } from './Component/Button.tsx';
 
 function App() {
   return (
-    <h1 className="text-emerald-700">
-      Hello World, styled by TailwindCSS this title should be green
-    </h1>
+    <Button handleClick={() => console.log('cliqué depuis le composant' +
+      ' enfant')}/>
   );
 }
 
