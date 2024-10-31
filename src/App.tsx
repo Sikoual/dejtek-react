@@ -1,10 +1,11 @@
 import "./App.css";
 
 function App() {
+  const recipes = [{id: 1, title: 'Pizza'}, {id: 2, title: 'Lasagne'}, {id: 3, title: 'Kebab'}]
   return (
-    <h1 className="text-emerald-700">
-      Hello World, styled by TailwindCSS this title should be green
-    </h1>
+    <ul>
+      {recipes.map((recipe) => <li key={recipe.id}>{recipe.title}</li>)}
+    </ul>
   );
 }
 
